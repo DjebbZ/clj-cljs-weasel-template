@@ -5,7 +5,7 @@
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [compojure "1.1.8"]
 
-                 [org.clojure/clojurescript "0.0-2234"]
+                 [org.clojure/clojurescript "0.0-2261"]
                  [com.cemerick/piggieback "0.1.3"]
                  [weasel "0.2.1"]]
 
