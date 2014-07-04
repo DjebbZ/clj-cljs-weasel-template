@@ -7,7 +7,7 @@
 
                  [org.clojure/clojurescript "0.0-2261"]
                  [com.cemerick/piggieback "0.1.3"]
-                 [weasel "0.2.1"]]
+                 [weasel "0.3.0"]]
 
   :plugins [[lein-cljsbuild "1.0.3"]
             [lein-ring "0.8.11"]]
