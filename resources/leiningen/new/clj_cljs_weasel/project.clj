@@ -23,7 +23,4 @@
               :source-paths ["src/cljs"]
               :compiler {
                 :output-to "resources/public/js/{{sanitized}}.js"
-                :output-dir "resources/public/js/out"
-                :optimizations :none
-                :source-map true
-                :pretty-print true}}]})
+                :optimizations :whitespace}}]})
