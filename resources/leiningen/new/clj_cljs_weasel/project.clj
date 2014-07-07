@@ -16,11 +16,17 @@
 
   :source-paths ["src/clj", "src/cljs"]
 
+  :resource-paths ["resources", "target/cljsout"]
+
   :ring {:handler {{name}}.core/handler}
 
   :cljsbuild {
-    :builds [{:id "{{name}}"
-              :source-paths ["src/cljs"]
-              :compiler {
-                :output-to "resources/public/js/{{sanitized}}.js"
-                :optimizations :whitespace}}]})
+    :builds {
+      :dev
+        {:source-paths ["src/cljs"]
+         :compiler     {
+           :output-to     "target/cljsout/public/js/{{sanitized}}.js"
+           :output-dir    "target/cljsout/public/js"
+           :optimizations :whitespace
+           ;:source-map    "target/cljsout/public/js/{{sanitized}}.js.map"
+           }}}})
